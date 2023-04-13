@@ -4,6 +4,8 @@ import {Routes,Route} from 'react-router-dom';
 import Login from './pages/Authentication/Login';
 import routes from './components/strings/routes';
 import endpoints from './components/strings/endpoints';
+import Dashboard from './pages/Dashboard/Dashboard';
+import Home from './pages/Dashboard/Home';
 
 function App() {
   axios.defaults.headers.common["Accept"] = "application/json";
@@ -19,6 +21,9 @@ function App() {
   return (
     <Routes>
       <Route path={routes.INITIAL_ROUTE} element={<Login/>}/>
+      <Route path={routes.DASHBOARD} element={<Dashboard/>}>
+        <Route path={routes.DASHBOARD} element={<Home/>}/>
+      </Route>
     </Routes>
   );
 }

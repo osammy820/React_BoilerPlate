@@ -2,6 +2,7 @@
 
 const routes={
     INITIAL_ROUTE:'/',
+    DASHBOARD:'/dashboard'
    
 }
 

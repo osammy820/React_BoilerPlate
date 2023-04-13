@@ -1,5 +1,6 @@
 import React from "react";
-import Spinners from "./helpers/Spinners";
+import Spinners from "../helpers/Spinners";
+
 
 const Button = ({buttonText,isloading,callback,cssClasses}) => {
   return (
